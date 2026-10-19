@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noble Peak Scholars Consultancy — Guiding Futures Beyond Borders</title>
+<meta name="description" content="Noble Peak Scholars Consultancy connects students, professionals and families with education, employment and global opportunities across Australia, New Zealand, Canada, Germany, the UK and Spain.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+<!-- Inline SVG favicon so the brand mark appears in browser tabs and search results -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'><rect rx='12' width='100%25' height='100%25' fill='%230A2C32'/><text x='50%25' y='52%25' font-size='32' text-anchor='middle' fill='%23C79A47' font-family='Fraunces,serif' font-weight='600'>NP</text></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><rect rx='24' width='100%25' height='100%25' fill='%230A2C32'/><text x='50%25' y='54%25' font-size='64' text-anchor='middle' fill='%23C79A47' font-family='Fraunces,serif' font-weight='600'>NP</text></svg>">
+<meta name="theme-color" content="#0A2C32">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">
+      <img class="logo-mark" src="assets/logo-crane.png" alt="Noble Peak Scholars Consultancy logo — Crested Crane" width="500" height="405" loading="eager">
+      <span class="logo-text">Noble Peak Scholars<small>Consultancy</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#journey">Our Journey</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#destinations">Destinations</a>
+  <a href="#journey">Our Journey</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow reveal">Guiding Futures Beyond Borders</div>
+      <h1 class="display-xl reveal">Education. Careers. <em>Global Opportunities.</em></h1>
+      <p class="body-lg reveal">Noble Peak Scholars Consultancy gives students, professionals and families personalised guidance for the journey ahead — not just the next application, but the years that follow it.</p>
+      <div class="hero-ctas reveal">
+        <a href="#contact" class="btn btn-primary">Book a Consultation
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+        </a>
+        <a href="#services" class="btn btn-outline">Explore Your Pathway</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="hero-badge"><span class="pulse"></span> 6 Countries · 1 Journey</div>
+      <div class="hero-img-frame">
+        <img src="https://res.cloudinary.com/dtsixdjix/image/upload/v1787804567/Let_s_study_abroad_zev2nn.jpg" alt="A young African professional preparing for study and work abroad">
+      </div>
+      <div class="hero-float-card">
+        <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 7v10l8 5 8-5V7l-8-5z"/></svg></div>
+        <div>
+          <strong>Long-term planning</strong>
+          <span>Every pathway mapped beyond the first step</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="tickerTrack">
+      <span>Education</span><span>Careers</span><span>Global Opportunities</span><span>Personal Guidance</span><span>New Beginnings</span><span>Global Mobility</span>
+      <span>Education</span><span>Careers</span><span>Global Opportunities</span><span>Personal Guidance</span><span>New Beginnings</span><span>Global Mobility</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE JOURNEY INTRO ============ -->
+<section class="section-pad" id="about">
+  <div class="container intro-grid">
+    <h2 class="intro-statement gs-reveal">Your future deserves more than <span class="accent-word">a shortcut.</span></h2>
+    <div class="intro-side gs-reveal">
+      <p class="body-lg">Too often, decisions about study, work and migration are made one application at a time — without a clear view of how education, employment and future opportunity fit together.</p>
+      <p class="body-lg">Noble Peak Scholars Consultancy exists to close that gap. We help you weigh not only what's possible right now, but what your qualifications, experience and goals could open up over the years ahead.</p>
+      <div class="intro-marker">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 2v20M2 12h20" stroke-linecap="round"/><circle cx="12" cy="12" r="9"/></svg>
+        <span>Personalised guidance for education, employment and global mobility — built around your circumstances, not a template.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DESTINATIONS ============ -->
+<section class="section-pad destinations" id="destinations">
+  <div class="container">
+    <div class="dest-head">
+      <h2 class="display-md gs-reveal">Where could your journey take you?</h2>
+      <div class="dest-scroll-hint gs-reveal">Scroll to explore →</div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="dest-scroller" id="destScroller">
+
+      <div class="dest-card">
+        <img src="https://res.cloudinary.com/dtsixdjix/image/upload/v1787804567/648025833935104753_h09qp1.jpg" alt="Australia">
+        <div class="dest-card-body">
+          <div class="num">01 / Destination</div>
+          <h3>Australia</h3>
+          <p>Where our own journey began — education, skilled employment and settlement pathways.</p>
+          <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></div>
+        </div>
+      </div>
+
+      <div class="dest-card">
+        <img src="https://res.cloudinary.com/dtsixdjix/image/upload/v1787804566/Don_t_miss_these_insane_NZ_photography_locations_i04qqn.jpg" alt="New Zealand">
+        <div class="dest-card-body">
+          <div class="num">02 / Destination</div>
+          <h3>New Zealand</h3>
+          <p>Quality education and career pathways in a welcoming, close-knit community.</p>
+          <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></div>
+        </div>
+      </div>
+
+      <div class="dest-card">
+        <img src="https://res.cloudinary.com/dtsixdjix/image/upload/v1787804567/145874475426784733_hcayqp.jpg" alt="Canada">
+        <div class="dest-card-body">
+          <div class="num">03 / Destination</div>
+          <h3>Canada</h3>
+          <p>Globally respected institutions and clear routes from study into employment.</p>
+          <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></div>
+        </div>
+      </div>
+
+      <div class="dest-card">
+        <img src="https://res.cloudinary.com/dtsixdjix/image/upload/v1787804566/208713763977178543_rofdrw.jpg" alt="Germany">
+        <div class="dest-card-body">
+          <div class="num">04 / Destination</div>
+          <h3>Germany</h3>
+          <p>Strong technical and vocational routes at the heart of Europe.</p>
+          <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></div>
+        </div>
+      </div>
+
+      <div class="dest-card">
+        <img src="https://res.cloudinary.com/dtsixdjix/image/upload/v1787804570/London_Knightsbridge_j1oyw5.jpg" alt="United Kingdom">
+        <div class="dest-card-body">
+          <div class="num">05 / Destination</div>
+          <h3>United Kingdom</h3>
+          <p>Centuries of academic tradition alongside modern career pathways.</p>
+          <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></div>
+        </div>
+      </div>
+
+      <div class="dest-card">
+        <img src="https://res.cloudinary.com/dtsixdjix/image/upload/v1787804566/Madrid_hic8pu.jpg" alt="Spain">
+        <div class="dest-card-body">
+          <div class="num">06 / Destination</div>
+          <h3>Spain</h3>
+          <p>A rich culture and growing academic and employment opportunities.</p>
+          <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section-pad services" id="services">
+  <div class="container">
+    <div class="eyebrow light gs-reveal">What we do</div>
+    <h2 class="display-md gs-reveal">One journey. Complete support.</h2>
+    <div class="service-layout">
+      <div class="service-list" id="serviceList">
+        <div class="service-row active" data-img="0">
+          <span class="snum">01</span>
+          <div>
+            <h3>Education Counselling</h3>
+            <p>Personalised guidance to identify courses, institutions and study destinations aligned to your goals.</p>
+          </div>
+        </div>
+        <div class="service-row" data-img="1">
+          <span class="snum">02</span>
+          <div>
+            <h3>English Proficiency Test Preparation</h3>
+            <p>IELTS, PTE and driving preparation, plus referrals to reputable training providers.</p>
+          </div>
+        </div>
+        <div class="service-row" data-img="2">
+          <span class="snum">03</span>
+          <div>
+            <h3>University &amp; College Admissions</h3>
+            <p>Support preparing documentation, submitting applications and liaising with education providers.</p>
+          </div>
+        </div>
+        <div class="service-row" data-img="3">
+          <span class="snum">04</span>
+          <div>
+            <h3>Employment Preparation</h3>
+            <p>Western-style resumes, cover letters, interview preparation and workplace-readiness coaching.</p>
+          </div>
+        </div>
+        <div class="service-row" data-img="4">
+          <span class="snum">05</span>
+          <div>
+            <h3>Settlement Support</h3>
+            <p>Practical guidance on accommodation, banking, community integration and everyday living.</p>
+          </div>
+        </div>
+        <div class="service-row" data-img="5">
+          <span class="snum">06</span>
+          <div>
+            <h3>Career &amp; Pathway Planning</h3>
+            <p>Understanding the range of pathways available to you, in partnership with qualified migration professionals where needed.</p>
+          </div>
+        </div>
+        <div class="service-row" data-img="6">
+          <span class="snum">07</span>
+          <div>
+            <h3>Driving Classes, Skill Assessment &amp; Expression of Interest</h3>
+            <p>Driving classes, skill assessment and expression of interest as part of the services — practical driving preparation alongside EOI support for skilled migration pathways.</p>
+          </div>
+        </div>
+        <div class="service-row" data-img="7">
+          <span class="snum">08</span>
+          <div>
+            <h3>Visa &amp; Migration Application Support</h3>
+            <p>Guidance on pathways, document preparation and application support, working with appropriately qualified migration professionals where regulated advice is required.</p>
+          </div>
+        </div>
+        <div class="service-row" data-img="8">
+          <span class="snum">09</span>
+          <div>
+            <h3>Ongoing Client Support</h3>
+            <p>We remain available well beyond enrolment or arrival, as your future continues to take shape.</p>
+          </div>
+        </div>
+      </div>
+      <div class="service-visual">
+        <img class="active" data-i="0" src="https://res.cloudinary.com/dtsixdjix/image/upload/v1787990311/education_councelling_nvjxep.jpg" alt="">
+        <img data-i="1" src="https://res.cloudinary.com/dtsixdjix/image/upload/v1787990311/english_proffciency_test_sb310c.jpg" alt="">
+        <img data-i="2" src="https://res.cloudinary.com/dtsixdjix/image/upload/v1787990311/University_admision_zfbak6.jpg" alt="">
+        <img data-i="3" src="https://picsum.photos/seed/npc-svc-3/800/800" alt="">
+        <img data-i="4" src="https://picsum.photos/seed/npc-svc-4/800/800" alt="">
+        <img data-i="5" src="https://picsum.photos/seed/npc-svc-5/800/800" alt="">
+        <img data-i="6" src="https://res.cloudinary.com/dtsixdjix/image/upload/v1787990310/drivig_class_p4xyme.jpg" alt="">
+        <img data-i="7" src="https://picsum.photos/seed/npc-svc-7/800/800" alt="">
+        <img data-i="8" src="https://picsum.photos/seed/npc-svc-8/800/800" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="story" id="journey">
+  <div class="story-bg">
+    <img src="https://res.cloudinary.com/dtsixdjix/image/upload/v1787804567/Gemini_Generated_Image_3hg3q93hg3q93hg3_qp6cd9.jpg" alt="">
+  </div>
+  <div class="container story-content">
+    <div class="eyebrow gs-reveal">Our story</div>
+    <h2 class="display-lg gs-reveal">We've walked the journey.</h2>
+    <p class="gs-reveal">Noble Peak Scholars Consultancy was founded from our own experiences of studying, working and building new lives in Australia — navigating unfamiliar systems and making important decisions with limited access to reliable information.</p>
+    <div class="quote gs-reveal">"We don't simply help people study or work abroad — we help them build a pathway towards a brighter future."</div>
+    <p class="gs-reveal">Along the way, we saw talented people invest time and resources into pathways that didn't match their long-term goals — and skilled professionals return to study, unaware that other options had been available to them all along.</p>
+    <p class="gs-reveal story-closing">This is what inspired us to create Noble Peak Scholars Consultancy — a consultancy focused on helping others make informed choices and confidently pursue education, career and global opportunities.</p>
+  </div>
+</section>
+
+<!-- ============ VISION · MISSION · PURPOSE · VALUES ============ -->
+<section class="section-pad vmv" id="vision">
+  <div class="container">
+    <div class="vmv-head">
+      <div class="eyebrow gs-reveal">What drives us</div>
+      <h2 class="display-md gs-reveal">Vision, mission &amp; the values behind them.</h2>
+    </div>
+    <div class="vmv-grid">
+      <div class="vmv-card gs-reveal">
+        <span class="vmv-num">01</span>
+        <h3>Our Vision</h3>
+        <p>To become a trusted global consultancy connecting individuals with quality education, employment and migration opportunities that transform lives and strengthen communities.</p>
+      </div>
+      <div class="vmv-card gs-reveal">
+        <span class="vmv-num">02</span>
+        <h3>Our Mission</h3>
+        <p>To provide professional, ethical and personalised guidance that empowers students and skilled professionals to access education, employment and migration opportunities globally.</p>
+      </div>
+      <div class="vmv-card gs-reveal">
+        <span class="vmv-num">03</span>
+        <h3>Our Purpose</h3>
+        <p>To inspire and empower people to pursue education and global career opportunities that lead to brighter futures.</p>
+      </div>
+    </div>
+    <div class="values-block gs-reveal">
+      <h4>Our Values</h4>
+      <div class="values-row">
+        <div class="value-chip"><strong>Integrity</strong><span>We act ethically, honestly and responsibly in everything we do.</span></div>
+        <div class="value-chip"><strong>Trust</strong><span>We build genuine relationships through transparency, respect and reliability.</span></div>
+        <div class="value-chip"><strong>Excellence</strong><span>We are committed to delivering professional, high-quality guidance and support.</span></div>
+        <div class="value-chip"><strong>Empowerment</strong><span>We equip our clients with the knowledge and confidence to make informed decisions.</span></div>
+        <div class="value-chip"><strong>Partnership</strong><span>We believe meaningful and lasting partnerships create better opportunities and stronger outcomes.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CRANE BRAND STORY (signature moment) ============ -->
+<section class="section-pad crane-section" id="crane">
+  <div class="container crane-copy">
+    <div class="eyebrow gs-reveal" style="justify-content:center;">The mark we carry</div>
+    <h2 class="display-md gs-reveal">Every peak begins with a blessing.</h2>
+  </div>
+  <div class="crane-visual" id="craneVisual">
+    <!-- Replace the inline illustration with the actual logo image. -->
+    <img src="https://res.cloudinary.com/dtsixdjix/image/upload/v1787990123/WhatsApp_Image_2026-08-28_at_21.16.21_jpzslr.jpg" alt="Noble Peak Scholars Consultancy logo — Crested Crane" loading="lazy">
+  </div>
+  <div class="container crane-copy">
+    <p class="body-lg gs-reveal" style="text-align:center;">At the heart of our logo is the Crested Crane — within the Nandi community of Kenya, a revered family totem symbolising blessings, renewal and prosperity, traditionally tied to rain and the promise of new beginnings. Above it, a stylised fan represents the opening of doors and the sharing of knowledge — the many pathways available to those pursuing education, careers and global mobility.</p>
+    <div class="crane-meanings" id="craneMeanings">
+      <span>Blessings</span><span>Renewal</span><span>Prosperity</span><span>Hope</span>
+      <span>Loyalty</span><span>Grace</span><span>Peace</span><span>Opportunity</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE ============ -->
+<section class="section-pad why">
+  <div class="container">
+    <div class="why-head">
+      <div class="eyebrow gs-reveal">Why Noble Peak</div>
+      <h2 class="display-md gs-reveal">Why choose Noble Peak Scholars Consultancy?</h2>
+    </div>
+    <div class="why-scroller">
+      <div class="why-card">
+        <span class="wnum">01</span>
+        <h3>We've Walked the Journey</h3>
+        <p>Our guidance is built on lived experience navigating international education, employment and settlement.</p>
+      </div>
+      <div class="why-card">
+        <span class="wnum">02</span>
+        <h3>Personalised Advice</h3>
+        <p>We take the time to understand your goals and circumstances before recommending any pathway.</p>
+      </div>
+      <div class="why-card">
+        <span class="wnum">03</span>
+        <h3>Ethical &amp; Transparent Guidance</h3>
+        <p>Honest advice, realistic expectations and clear information — always.</p>
+      </div>
+      <div class="why-card">
+        <span class="wnum">04</span>
+        <h3>Long-Term Planning</h3>
+        <p>We look beyond the immediate application and help clients make consider education, career and future opportunities as part of their longterm journey. </p>
+      </div>
+      <div class="why-card">
+        <span class="wnum">05</span>
+        <h3>Ongoing Support</h3>
+        <p>Our relationship continues well beyond submission or enrolment, as you build your new life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="process-head">
+       <div class="eyebrow gs-reveal">How it works</div>
+      <h2 class="display-md gs-reveal">Your journey, simplified.</h2>
+    </div>
+    <div class="process-track" id="processTrack">
+      <div class="process-line"><div class="process-line-fill" id="processFill"></div></div>
+
+      <div class="process-step" data-step>
+        <div class="pnum">01</div>
+        <h3>Discover</h3>
+        <p>We start by understanding your goals, background and aspirations — not just your next application.</p>
+      </div>
+      <div class="process-step" data-step>
+        <div class="pnum">02</div>
+        <h3>Plan</h3>
+        <p>Together, we identify the pathways best suited to your circumstances and long-term direction.</p>
+      </div>
+      <div class="process-step" data-step>
+        <div class="pnum">03</div>
+        <h3>Apply</h3>
+        <p>We help prepare your documentation and applications, and liaise with education providers on your behalf.</p>
+      </div>
+      <div class="process-step" data-step>
+        <div class="pnum">04</div>
+        <h3>Prepare</h3>
+        <p>From language readiness to workplace expectations, we help you prepare for life, study and work abroad.</p>
+      </div>
+      <div class="process-step" data-step>
+        <div class="pnum">05</div>
+        <h3>Thrive</h3>
+        <p>Our support continues as you settle in and build the future you set out to create.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FUTURE VISION ============ -->
+<section class="section-pad future">
+  <div class="container">
+    <div class="eyebrow gs-reveal">Looking ahead</div>
+    <h2 class="display-md gs-reveal">From local roots to global horizons.</h2>
+    <p class="gs-reveal">We're building Noble Peak with intention — starting close to home, and growing toward the communities we hope to serve next.</p>
+    <div class="future-path gs-reveal">
+      <div class="future-node"><span class="fdot"></span><span>Kenya</span><small>Today</small></div>
+      <div class="future-line"></div>
+      <div class="future-node"><span class="fdot"></span><span>Australia</span><small>In progress</small></div>
+      <div class="future-line"></div>
+      <div class="future-node"><span class="fdot"></span><span>Global Opportunities</span><small>Vision</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta" id="contact">
+  <div class="container">
+    <div class="cta-box">
+      <div class="cta-inner">
+        <div class="eyebrow light gs-reveal" style="justify-content:center;">Let's talk</div>
+        <h2 class="display-lg gs-reveal">Your next chapter starts with one conversation.</h2>
+        <p class="gs-reveal">Tell us about your goals — education, employment or a fresh start abroad — and we'll help you map out what's genuinely possible.</p>
+        <div class="cta-ctas gs-reveal">
+          <a href="mailto:noblepeakscholars@outlook.com?subject=Consultation%20Request" class="btn btn-primary">Book a Consultation
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+          <a href="#services" class="btn btn-outline on-dark">Explore Our Services</a>
+        </div>
+        <div class="cta-contact-info gs-reveal">
+          <a href="mailto:noblepeakscholars@outlook.com"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>noblepeakscholars@outlook.com</a>
+          <span class="sep">·</span>
+          <a href="tel:+254726339301"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6.5 3.5h3l1.5 4-2 1.5a15 15 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2C10.5 19.5 4.5 13.5 4.5 5.5a2 2 0 0 1 2-2Z"/></svg>0726&nbsp;339&nbsp;301</a>
+          <span class="sep">·</span>
+          <a href="https://facebook.com" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.75l.5-3H13.5V8.05c0-.87.29-1.46 1.52-1.46h1.63V3.91c-.28-.04-1.24-.12-2.36-.12-2.34 0-3.94 1.43-3.94 4.06V10H7.7v3h2.65v8h3.15Z"/></svg>Facebook</a>
+          <span class="sep">·</span>
+          <a href="https://instagram.com/noblepeak2026" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm4.5 3.25A4.75 4.75 0 1 1 12 16.75 4.75 4.75 0 0 1 12 7.25Zm0 2A2.75 2.75 0 1 0 12 14.75 2.75 2.75 0 0 0 12 9.25ZM17.75 6.1a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3Z" clip-rule="evenodd"/></svg>@noblepeak2026</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <img class="logo-mark" src="assets/logo-crane.png" alt="Noble Peak Scholars Consultancy logo — Crested Crane" width="500" height="405" loading="eager">
+          <span class="logo-text">Noble Peak</span>
+        </a>
+        <p>Guiding Futures Beyond Borders. Connecting students, professionals and families with education, employment and global opportunities.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#vision">Vision &amp; Values</a></li>
+          <li><a href="#journey">Our Journey</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Education Counselling</a></li>
+          <li><a href="#services">Test Preparation</a></li>
+          <li><a href="#services">Admissions</a></li>
+          <li><a href="#services">Driving &amp; Migration</a></li>
+          <li><a href="#services">Settlement Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Destinations</h4>
+        <ul>
+          <li><a href="#destinations">Australia</a></li>
+          <li><a href="#destinations">New Zealand</a></li>
+          <li><a href="#destinations">Canada</a></li>
+          <li><a href="#destinations">United Kingdom</a></li>
+          <li><a href="#destinations">Germany</a></li>
+          <li><a href="#destinations">Spain</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:noblepeakscholars@outlook.com"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>noblepeakscholars@outlook.com</a></li>
+          <li><a href="tel:+254726339301"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6.5 3.5h3l1.5 4-2 1.5a15 15 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2C10.5 19.5 4.5 13.5 4.5 5.5a2 2 0 0 1 2-2Z"/></svg>0726&nbsp;339&nbsp;301</a></li>
+          <li><a href="https://facebook.com" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.75l.5-3H13.5V8.05c0-.87.29-1.46 1.52-1.46h1.63V3.91c-.28-.04-1.24-.12-2.36-.12-2.34 0-3.94 1.43-3.94 4.06V10H7.7v3h2.65v8h3.15Z"/></svg>Facebook</a></li>
+          <li><a href="https://instagram.com/noblepeak2026" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm4.5 3.25A4.75 4.75 0 1 1 12 16.75 4.75 4.75 0 0 1 12 7.25Zm0 2A2.75 2.75 0 1 0 12 14.75 2.75 2.75 0 0 0 12 9.25ZM17.75 6.1a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3Z" clip-rule="evenodd"/></svg>@noblepeak2026</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Noble Peak Scholars Consultancy. All rights reserved.</span>
+      <a href="https://harxelagencylinktree.netlify.app/" target="_blank" rel="noopener">Designed by Harxel Agency</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
