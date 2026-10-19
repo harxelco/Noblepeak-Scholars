@@ -15,11 +15,16 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
   mobileMenu.classList.toggle('open');
   nav.classList.toggle('menu-open');
+  const isOpen = hamburger.classList.contains('open');
+  hamburger.setAttribute('aria-expanded', String(isOpen));
+  hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
 });
 mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   hamburger.classList.remove('open');
   mobileMenu.classList.remove('open');
   nav.classList.remove('menu-open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  hamburger.setAttribute('aria-label', 'Open menu');
 }));
 
 /* ---------- HERO ENTRANCE ---------- */

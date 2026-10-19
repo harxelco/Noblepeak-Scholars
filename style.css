@@ -170,6 +170,42 @@ section{position:relative;}
   .hamburger{width:40px;height:40px;}
 }
 
+.whatsapp-float{
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  width:64px;
+  height:64px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#25d366;
+  color:#fff;
+  border-radius:50%;
+  box-shadow:0 18px 36px -14px rgba(37, 211, 102, 0.65);
+  z-index:250;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.whatsapp-float:hover{
+  transform:translateY(-4px) scale(1.04);
+  box-shadow:0 22px 42px -16px rgba(37, 211, 102, 0.8);
+}
+.whatsapp-float svg{
+  width:34px;
+  height:34px;
+  fill:#fff;
+  display:block;
+}
+.whatsapp-float:focus-visible{outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 6px #25d366;}
+@media (max-width:640px){
+  .whatsapp-float{
+    right:18px;
+    bottom:18px;
+    width:58px;
+    height:58px;
+  }
+}
+
 /* ============ HERO ============ */
 .hero{padding:150px 0 0;overflow:hidden;}
 .hero-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:60px;align-items:center;}
@@ -524,3 +560,54 @@ footer a:hover{color:var(--accent-soft);}
 .gs-reveal{opacity:0;transform:translateY(50px);}
 
 :focus-visible{outline:2px solid var(--blush);outline-offset:3px;}
+
+
+/* ============ ACCESSIBILITY HELPERS ============ */
+.skip-link{position:absolute;left:12px;top:-60px;z-index:1000;background:#fff;color:var(--primary-dark);padding:10px 16px;border-radius:8px;font-weight:700;transition:top .2s ease;}
+.skip-link:focus{top:12px;}
+.eyebrow.center{justify-content:center;}
+.center-text{text-align:center;}
+
+/* ============ LET'S TALK — CONTACT CHIPS WITH REAL BRAND LOGOS ============ */
+.contact-chips{
+  list-style:none;margin:38px auto 0;padding:0;max-width:1000px;
+  display:flex;flex-wrap:wrap;justify-content:center;gap:12px;
+}
+.contact-chips li{margin:0;}
+.chip{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:11px 18px 11px 12px;border-radius:999px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.22);
+  color:#fff;font-family:var(--font-mono);font-size:14px;font-weight:500;
+  transition:background .25s ease,border-color .25s ease,transform .25s ease;
+}
+.chip:hover,.chip:focus-visible{background:rgba(255,255,255,0.16);border-color:rgba(255,255,255,0.5);transform:translateY(-2px);}
+.chip:focus-visible{outline:2px solid #fff;outline-offset:3px;}
+.chip .brand{width:30px;height:30px;flex:0 0 auto;padding:5px;border-radius:50%;background:#fff;box-sizing:border-box;}
+.chip .ico-line{background:rgba(255,255,255,0.14);color:#fff;}
+.chip-whatsapp .brand{fill:#25D366;}
+.chip-facebook .brand{fill:#0866FF;padding:0;background:transparent;}
+.chip-instagram .brand{fill:url(#igGrad);}
+.chip-whatsapp{border-color:rgba(37,211,102,0.55);}
+@media (max-width:640px){
+  .contact-chips{gap:10px;}
+  .chip{font-size:13px;padding:9px 14px 9px 10px;}
+  .chip .brand{width:26px;height:26px;}
+}
+
+/* Brand logos in footer */
+footer li svg.brand{width:17px;height:17px;}
+.brand-whatsapp{fill:#25D366;}
+.brand-facebook{fill:#4C8DFF;}
+.brand-instagram{fill:url(#igGrad);}
+
+/* Facebook's mark is a blue disc with the "f" cut out — a white disc behind it shows the f in white */
+.chip-facebook .brand,.brand-facebook{background:#fff;border-radius:50%;padding:0;}
+.chip-facebook .brand{fill:#0866FF;}
+.brand-facebook{fill:#0866FF;}
+
+.contact-chips .chip-break{flex-basis:100%;height:0;margin:-12px 0 0;}
+@media (max-width:640px){.contact-chips .chip-break{display:none;}}
+
+@media (min-width:641px){.footer-bottom{padding-right:84px;}}
